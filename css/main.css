@@ -15,10 +15,24 @@ nav {
     font-size: 1.3rem;
 }
 
-nav > .nav-element {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+nav > div {
+    display: inline;
+}
+
+nav > div > .nav-link {
+    border-bottom: 0px solid transparent;
+}
+
+nav > div .nav-link:hover {
+    transition-duration: 0.3s;
+    border-bottom: 3px solid #ff5964;
+}
+
+nav > div > .nav-element {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 a {
@@ -29,4 +43,8 @@ a {
 
 .float-right {
     float: right;
+}
+
+.active {
+    border-bottom: 3px solid #ff5964 !important;
 }
