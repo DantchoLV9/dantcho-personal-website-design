@@ -37,6 +37,7 @@ nav > div > .nav-element {
 
 a {
     color: #333534;
+    cursor: pointer;
     text-decoration: none;
     background-color: transparent;
 }
@@ -47,4 +48,12 @@ a {
 
 .active {
     border-bottom: 3px solid #ff5964 !important;
+}
+
+.dark-background {
+    background-color: #333534;
+}
+
+.dark-background a {
+    color: #f3f5f9 !important;
 }
