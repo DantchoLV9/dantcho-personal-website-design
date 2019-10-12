@@ -9,7 +9,6 @@ body {
     background-color: #f3f5f9;
     color: #333534;
     font-family: "Nunito", sans-serif;
-    /*text-shadow: 0.1px 0.1px 5px #333534;*/
 }
 
 nav {
@@ -135,7 +134,7 @@ a {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: transform 0.5s ease-in;
         z-index: -1;
 
