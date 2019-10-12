@@ -6,19 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dantcho</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/bae49461dc.js"></script>
+    <script src="https://kit.fontawesome.com/bae49461dc.js" crossorigin="anonymous"></script>
     <script src="js/theme-switch.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <nav>
-        <div>
+        <div class="nav-links">
             <a class="nav-element nav-link" href="#">Home</a>
             <a class="nav-element nav-link" href="#">Blog</a>
             <a class="nav-element nav-link" href="#">Projects</a>
             <a class="nav-element nav-link" href="#">Contact Me</a>
         </div>
         <div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <a class="nav-element float-right" onclick="switchTheme()"><i id="switch-button" class="fas fa-moon"></i></a>
         </div>
     </nav>
@@ -27,5 +32,6 @@
             Dantcho
         </h1>
     </div>
+    <script src="js/navigation-menu.js"></script>
 </body>
 </html>
