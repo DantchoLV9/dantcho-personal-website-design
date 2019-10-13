@@ -16,6 +16,8 @@ nav {
     padding: 1rem 1rem;
     font-size: 1.3rem;
     align-items: center;
+    height: 8vh;
+    z-index: 1;
 }
 
 nav > div {
@@ -46,6 +48,11 @@ a {
     background-color: transparent;
 }
 
+header {
+    width: 100%;
+    height: 92vh;
+}
+
 .header {
     position: absolute;
     top: 50%;
@@ -55,7 +62,7 @@ a {
 }
 
 .header > h1 {
-    font-size: 5rem;
+    font-size: 10rem;
 }
 
 .float-right {
@@ -117,6 +124,28 @@ a {
     
 }
 
+.arrow {
+
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    
+}
+
+.arrow i {
+    animation: arrowAnimate 2s infinite;
+}
+
+#description {
+
+    margin: 16px;
+    padding: 0px 15vw 0px 15vw;
+    font-size: 1.5rem
+
+}
+
 @media screen and (max-width: 768px) {
 
     body {
@@ -169,4 +198,18 @@ a {
         transform: translateX(0px);
     }
 
+}
+
+@keyframes arrowAnimate {
+
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+    
 }
