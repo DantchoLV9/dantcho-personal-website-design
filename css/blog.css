@@ -1,0 +1,33 @@
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "sidebar container";
+    padding: 0px 10vw 0px 10vw;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.container {
+    grid-area: container;
+}
+
+@media screen and (max-width: 768px) {
+
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "sidebar sidebar"
+            "container container"
+        ;
+        padding: 0px 10vw 0px 10vw;
+    
+    }
+    
+}
