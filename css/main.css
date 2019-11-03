@@ -156,7 +156,7 @@ header {
     color: #333534;
     padding: 5px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 2px solid #dfe1e6;
     border-right: 0px;
     border-radius: 5px 0px 0px 5px;
     display: inline-block;
@@ -166,12 +166,20 @@ header {
 
 .search-button {
 
+    background-color: #dfe1e6;
     position: absolute;
     color: #333534;
     height: 40px;
     width: 40px;
     border-radius: 0px 5px 5px 0px;
     font-size: 20px;
+    cursor: pointer;
+
+}
+
+.search-button:hover {
+
+    background-color: #c6c8cc;
 
 }
 
