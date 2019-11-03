@@ -37,7 +37,7 @@
 .blog-post-text {
     display: grid;
     grid-template-rows: auto 1fr;
-    padding-left: 15px;
+    margin-left: 15px;
     grid-area: text;
 }
 
@@ -46,16 +46,71 @@
     width: auto;
 }
 
+.search-box-area {
+    margin-bottom: 15px;
+}
+
+.blog-tags-area {
+    margin-bottom: 15px;
+}
+
+.tag {
+    padding: 5px;
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.css-tag {
+    background: rgb(10,146,255);
+    background: -moz-linear-gradient(180deg, rgba(10,146,255,1) 0%, rgba(111,177,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(10,146,255,1) 0%, rgba(111,177,255,1) 100%);
+    background: linear-gradient(180deg, rgba(10,146,255,1) 0%, rgba(111,177,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a92ff",endColorstr="#6fb1ff",GradientType=1);
+    color: #f3f5f9;
+}
+
+.html-tag {
+    background: rgb(72,165,240);
+    background: -moz-linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(255,152,56,1) 0%, rgba(255,114,114,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(255,152,56,1) 0%, rgba(255,114,114,1) 100%);
+    background: linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(255,152,56,1) 0%, rgba(255,114,114,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#48a5f0",endColorstr="#ff7272",GradientType=1);
+    color: #f3f5f9;
+}
+
+.pagination {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.older-posts-button {
+    background: rgb(72,165,240);
+    background: -moz-linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(255,114,114,1) 0%, rgba(255,193,56,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(255,114,114,1) 0%, rgba(255,193,56,1) 100%);
+    background: linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(255,114,114,1) 0%, rgba(255,193,56,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#48a5f0",endColorstr="#ffc138",GradientType=1);
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #f3f5f9;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
+}
+
 @media screen and (max-width: 768px) {
 
     .grid-container {
 
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas: 
-            "container container"
-            "sidebar sidebar"
+            "container"
+            "sidebar"
         ;
         padding: 0px 10vw 0px 10vw;
     
@@ -68,7 +123,11 @@
             "image"
             "text"
         ;
-        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .blog-post-text {
+        margin-left: 5px;
     }
     
 }
