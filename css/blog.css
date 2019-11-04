@@ -25,7 +25,12 @@
 
 .blog-post:hover {
     background-color: #dfe1e6;
+    filter: brightness(80%);
     border-radius: 5px;
+}
+
+.dark-background .blog-post:hover {
+    background-color: #2b2e2d;
 }
 
 .blog-post-image {
