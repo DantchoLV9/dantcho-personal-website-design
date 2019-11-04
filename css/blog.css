@@ -24,7 +24,7 @@
 }
 
 .blog-post:hover {
-    background-color: #dfe1e6;
+    background-color: #ffffff;
     filter: brightness(80%);
     border-radius: 5px;
 }
