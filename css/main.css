@@ -53,6 +53,13 @@ header {
     height: 92vh;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.418);
+}
+
 .header {
     position: absolute;
     top: 50%;
