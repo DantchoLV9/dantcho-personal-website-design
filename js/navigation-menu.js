@@ -18,7 +18,7 @@ const navSlide = () => {
                 }
             }
             else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 + 0.5}s`;
                 if (!Object.is(pageContent, null)) {
                     pageContent.style.animation = 'movePageContentDown 0.3s ease forwards';
                 }

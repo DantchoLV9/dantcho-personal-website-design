@@ -1,0 +1,60 @@
+header {
+    width: 100%;
+    height: 92vh;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.header > h1 {
+    font-size: 10vw;
+}
+
+.arrow {
+
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    
+}
+
+.arrow i {
+    animation: arrowAnimate 2s infinite;
+}
+
+#description {
+
+    margin: 16px;
+    padding: 0px 15vw 0px 15vw;
+    font-size: 1.5rem
+
+}
+
+/* Mobile Device - Parameters */
+@media screen and (max-width: 768px) {
+
+    /* Mobile Header Text Size */
+    .header > h1 {
+        font-size: 15vw;
+    }
+
+}
+
+@keyframes arrowAnimate {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
