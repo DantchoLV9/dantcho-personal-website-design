@@ -225,6 +225,25 @@ hr {
     .blog-post-text {
         margin-left: 5px;
     }
+
+    .post-header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .post-pub-date {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-weight: bold;
+    }
+
+    hr {
+        margin-top: 15px;
+    }
     
 }
 
