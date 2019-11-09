@@ -59,30 +59,30 @@
     margin-left: 15px;
 }
 
-.blog-post {
+.project {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: "image text";
     margin-bottom: 15px;
 }
 
-.blog-post:hover {
+.project:hover {
     background-color: #ffffff;
     filter: brightness(80%);
     border-radius: 5px;
 }
 
-.dark-background .blog-post:hover {
+.dark-background .project:hover {
     background-color: #2b2e2d;
 }
 
-.blog-post-image {
+.project-image {
     align-self: center;
     grid-area: image;
     width: 100%;
 }
 
-.blog-post-text {
+.project-text {
     display: grid;
     grid-template-rows: auto 1fr;
     margin-left: 15px;
@@ -154,13 +154,11 @@ hr {
 }
 
 .td-design-tag {
-    background: rgb(72,165,240);
-    background: rgb(72,165,240);
-    background: rgb(72,165,240);
-    background: -moz-linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(73,184,255,1) 0%, rgba(176,78,255,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(73,184,255,1) 0%, rgba(176,78,255,1) 100%);
-    background: linear-gradient(180deg, rgba(72,165,240,1) 0%, rgba(73,184,255,1) 0%, rgba(176,78,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#48a5f0",endColorstr="#b04eff",GradientType=1);
+    background: rgb(240,72,174);
+    background: -moz-linear-gradient(180deg, rgba(240,72,174,1) 0%, rgba(255,109,73,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(240,72,174,1) 0%, rgba(255,109,73,1) 100%);
+    background: linear-gradient(180deg, rgba(240,72,174,1) 0%, rgba(255,109,73,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f048ae",endColorstr="#ff6d49",GradientType=1);
     color: #f3f5f9;
 }
 
@@ -211,7 +209,7 @@ hr {
         font-size: 2rem;
     }
 
-    .blog-post {
+    .project {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-areas: 
@@ -224,7 +222,7 @@ hr {
         margin-left: 0px;
     }
 
-    .blog-post-text {
+    .project-text {
         margin-left: 5px;
     }
 
