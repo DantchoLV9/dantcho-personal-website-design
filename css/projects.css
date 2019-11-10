@@ -190,6 +190,14 @@ hr {
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
 }
 
+.layout-button {
+    color: #2b2e2d;
+    font-size: 1.5rem;
+    display: block;
+    text-align: right;
+    height: 40px;
+}
+
 @media screen and (max-width: 768px) {
 
     .grid-container {
