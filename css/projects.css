@@ -57,13 +57,49 @@
 .container {
     grid-area: container;
     margin-left: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "layout-button-area"
+        "projects-area"
+        "pagination"
+    ;
 }
 
 .project {
     display: grid;
+    margin-bottom: 15px;
+}
+
+.project-list {
     grid-template-columns: auto auto;
     grid-template-areas: "image text";
-    margin-bottom: 15px;
+}
+
+.project-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "image"
+        "text"
+    ;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 15px;
+    grid-template-rows: auto auto auto;
+}
+
+.projects-area {
+    display: grid;
+    grid-area: projects-area;
+}
+
+.layout-button-area {
+    grid-area: layout-button-area;
 }
 
 .project:hover {
@@ -174,6 +210,7 @@ hr {
 .pagination {
     margin-bottom: 15px;
     text-align: center;
+    grid-area: pagination;
 }
 
 .older-posts-button {
