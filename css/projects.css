@@ -89,7 +89,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 15px;
+    grid-column-gap: 15px;
     grid-template-rows: auto auto auto;
 }
 
