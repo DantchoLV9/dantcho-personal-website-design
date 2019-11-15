@@ -235,6 +235,10 @@ hr {
     height: 40px;
 }
 
+.project-gallery {
+    grid-area: project-gallery;
+}
+
 @media screen and (max-width: 768px) {
 
     .grid-container {
