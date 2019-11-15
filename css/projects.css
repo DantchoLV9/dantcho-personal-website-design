@@ -138,11 +138,11 @@
     margin-bottom: 15px;
 }
 
-.post-title {
+.project-name {
     font-size: 2.5rem;
 }
 
-.post-pub-date {
+.back-link {
     text-align: right;
     display: grid;
     grid-template-rows: auto auto;
@@ -156,25 +156,21 @@ hr {
     border-radius: 5px;
 }
 
-.pub-date {
-    color: rgb(141, 141, 141)
-}
-
-.post-body {
+.project-body {
     margin-top: 15px;
 }
 
-.post-image {
+.project-image {
     border-radius: 5px;
     margin-bottom: 25px;
 }
 
-.post-body p {
+.project-body p {
     margin-bottom: 25px;
     font-size: 1.3rem;
 }
 
-.post-header {
+.project-header {
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -250,7 +246,7 @@ hr {
     
     }
 
-    .post-title {
+    .project-name {
         font-size: 2rem;
     }
 
@@ -271,7 +267,7 @@ hr {
         margin-left: 5px;
     }
 
-    .post-header {
+    .project-header {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
